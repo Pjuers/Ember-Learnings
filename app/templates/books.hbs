@@ -1,0 +1,13 @@
+{{page-title "Books"}}
+<h1>hier are some books</h1>
+
+{{#each this.model as |book| }}
+<div>
+    <h3>Name: {{book.name}}</h3>
+    <h4>Autor: {{book.author}}</h4>
+    <h4>Veröffentlicht: {{book.release_date}}</h4>
+    <h5>Seiten: {{book.pages}}</h5>
+</div>
+{{/each}}
+
+{{outlet}}
